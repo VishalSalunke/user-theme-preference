@@ -33,9 +33,9 @@ async function startServer() {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   });
-  console.log("mongodb connected");
+
   app.listen(process.env.PORT || 4444, () => {
-    console.log("server has started on port 4444");
+    console.log("server has started");
   });
 }
 

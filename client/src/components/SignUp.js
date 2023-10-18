@@ -23,7 +23,6 @@ function Signup() {
   const navigate = useNavigate();
 
   const registerUserCallback = () => {
-    console.log("callback hit");
     registerUser();
   };
 

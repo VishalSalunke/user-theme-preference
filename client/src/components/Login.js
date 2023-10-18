@@ -23,7 +23,6 @@ function Login() {
   const navigate = useNavigate();
 
   const loginUserCallback = () => {
-    console.log("callback hit");
     loginUser();
   };
 

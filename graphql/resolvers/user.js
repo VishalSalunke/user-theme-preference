@@ -42,7 +42,7 @@ module.exports = {
 
       // save user in DB
       const res = await newUser.save();
-      console.log(res);
+
       return {
         id: res.id,
         ...res._doc,
@@ -50,7 +50,6 @@ module.exports = {
     },
     async loginUser(_, { loginInput: { email, password } }) {
       // check if user exits
-      console.log("login details", email, password);
       const user = await User.findOne({ email });
       // verify password
       if (user && (await bycrypt.compare(password, user.password))) {
