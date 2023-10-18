@@ -1,11 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 import Users from "../components/Users";
 
 const Home = ({ user }) => {
-  const navigate = useNavigate();
-  if (!user) navigate("/login");
-  return <>{user ? <Users /> : null}</>;
+  return <>{user ? <Users /> : <Navigate to="/login" />}</>;
 };
 
 export default Home;

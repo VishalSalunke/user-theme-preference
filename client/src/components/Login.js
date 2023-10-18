@@ -41,6 +41,11 @@ function Login() {
     },
     variables: { loginInput: values },
   });
+
+  const routeChange = () => {
+    navigate("/register");
+  };
+
   return (
     <div className="form-container">
       <h2>Login</h2>
@@ -62,6 +67,9 @@ function Login() {
         ))}
         <button onClick={onSubmit}>Login</button>
       </form>
+      <button className="sign-up" onClick={routeChange}>
+        Sign up
+      </button>
     </div>
   );
 }

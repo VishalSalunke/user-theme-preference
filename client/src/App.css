@@ -52,3 +52,11 @@ button {
 h2 {
   text-align: center;
 }
+
+.sign-up {
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  color: #007bff;
+  margin-top: 10px;
+}
