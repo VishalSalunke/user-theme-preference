@@ -1,0 +1,35 @@
+.card {
+  background-color: #6b3240;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  flex: 1 0 20%;
+  max-width: calc(25% - 20px);
+}
+
+#light .card {
+  color: #2a2929;
+  background-color: #d8d3d3;
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+}
+
+#light .card-container {
+  background-color: #17afaf;
+}

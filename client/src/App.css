@@ -1,0 +1,54 @@
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: darkslategrey;
+}
+
+#light .container {
+  background-color: #17afaf;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+}

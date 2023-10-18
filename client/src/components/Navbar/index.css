@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+#light .navbar {
+  background-color: #d8d3d3;
+  color: #2a2929;
+}
+
+.logo {
+  height: 72px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid;
+  background-image: url("../../assets/img/logo-1.avif");
+  background-size: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 90px;
+}
+
+.nav-links li {
+  font-size: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.main-menu {
+  color: #fff;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+#light .main-menu {
+  color: #2a2929;
+}
+
+.main-menu:hover {
+  color: #007bff;
+}
+
+.theme-menu {
+  display: flex;
+  position: absolute;
+  width: 150px;
+  border: 0.5px solid gray;
+  flex-direction: column;
+  background: #333;
+  right: 115px;
+  margin-top: 10px;
+}
+
+#light .theme-menu {
+  color: #2a2929;
+  background-color: #d8d3d3;
+}
+
+.theme-menu-item {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: font-size 0.3s;
+}
+
+.theme-menu-item:hover {
+  font-size: 1.2em; /* Increase the font size on hover */
+}
