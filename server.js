@@ -2,7 +2,10 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const mongoose = require("mongoose");
-require("dotenv").config();
+
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 // Internal dependancies
 const typeDefs = require("./graphql/typeDefs");
